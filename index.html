@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <script src="assets/scripts/script.js"></script>
+
+    <title>Fomulário de Contato</title>
+</head>
+<body>
+    <main>
+        <h1>Fale Conosco</h1>
+
+        <form action="post" autocomplete="off">
+
+            <div class="names line">
+                <label for="fnameid">Primeiro Nome</label>
+                <input type="text" name="fnamena" id="fnameid" required>
+                <label for="lnameid">Sobrenome</label>
+                <input type="text" name="lnamena" id="lnameid" required>
+            </div>
+
+            <div class="mail line">
+                <label for="emailid">Endereço de Email</label>
+                <input type="email" name="emailna" id="emailid" required>
+            </div>
+
+            
+
+                <fieldset class="fquerybox">
+                    <legend>Tipo de Consulta</legend>
+                    <div class="querybox" onclick="focusRadio1()">
+                        <input type="radio" name="query" id="query1id" required>
+                        <label for="query1id">Consulta Geral</label>
+                    </div>
+                    <div class="querybox" onclick="focusRadio2()">
+                        <input type="radio" name="query" id="query2id" required>
+                        <label for="query2id" id="query2label">Consulta de Suporte</label>
+                    </div>
+                </fieldset>
+
+        
+
+            <div class="mensage line">
+                <label for="mensboxid">Mensagem</label>
+                <textarea name="mensboxna" id="mensboxid" required></textarea>
+            </div>
+
+            <input type="checkbox" class="line" name="checkna" id="checkid" required>
+            <label for="checkid" id="checklabel">Concordo em ser contatado pelo time</label>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
